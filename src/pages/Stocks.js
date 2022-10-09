@@ -1,9 +1,9 @@
 import React from "react";
-import Stocks from "./Stocks";
+// import Stocks from "./Stocks";
 
 
-function stocks(props)  {
-    const Stocks = props.stocks.filter(stock => stock.symbol === props.match.params.symbol)[0];
+function Stocks(props)  {
+    const stocks = props.stocks.filter(stocks => stocks.symbol === props.match.params.symbol)[0];
     return(
         <div>
             <h2>{stocks.name}</h2>
